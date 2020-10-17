@@ -7,7 +7,7 @@ public static void operate(int key){
     JFileChooser fileChooser = new JFileChooser();
     fileChooser.showOpenDialog(null);
     File file = fileChooser.getSelectedFile();
-    //Reading from file
+    //Reading from file using FileInputSteam
     try{
         FileInputStream fis = new FileInputStream(file);
          byte[] data = new byte[fis.available()];//image converted to bytes
